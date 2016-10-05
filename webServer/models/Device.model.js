@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var mongoose = require('../config/mongoose'),
+var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var deviceSchema = new Schema ({
