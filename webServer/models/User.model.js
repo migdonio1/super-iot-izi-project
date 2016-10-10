@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var mongoose = require('mongoose'),
+var mongoose = require('../config/mongoose'),
     Schema = mongoose.Schema;
 
 var userSchema = new Schema({
@@ -40,4 +40,4 @@ var userSchema = new Schema({
     }]
 });
 
-mongoose.model('User', userSchema);
+module.exports = mongoose.model('User', userSchema);

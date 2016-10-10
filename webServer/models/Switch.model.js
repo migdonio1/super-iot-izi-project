@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var mongoose = require('mongoose'),
+var mongoose = require('../config/mongoose'),
     Schema = mongoose.Schema;
 
 var switchSchema = new Schema ({
@@ -25,4 +25,4 @@ var switchSchema = new Schema ({
     }]
 });
 
-mongoose.model('Switch', switchSchema);
+module.exports = mongoose.model('Switch', switchSchema);

@@ -5,7 +5,14 @@
 
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/iot-wifi-switch');
-console.log('Database is connected...');
+mongoose.connect("mongodb://localhost:27017/iot-wifi-switch");
+
+var db = mongoose.connection;
+
+db.on("error", console.error.bind(console, 'connection error:'));
+
+db.once('open', function() {
+    console.log("Database iot-wifi-switch connected...");
+});
 
 module.exports = mongoose;

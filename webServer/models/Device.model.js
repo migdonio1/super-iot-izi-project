@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var mongoose = require('mongoose'),
+var mongoose = require('../config/mongoose'),
     Schema = mongoose.Schema;
 
 var deviceSchema = new Schema ({
@@ -39,4 +39,4 @@ var deviceSchema = new Schema ({
 
 });
 
-mongoose.model('Device', deviceSchema);
+module.exports = mongoose.model('Device', deviceSchema);
