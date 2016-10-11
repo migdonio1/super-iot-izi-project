@@ -32,8 +32,8 @@ var deviceSchema = new Schema ({
         type: Schema.ObjectId,
         ref: 'Sensor'
     }],
-    Switchs: [{
-        type: Scheme.ObjectId,
+    switchs: [{
+        type: Schema.ObjectId,
         ref: 'Switch'
     }]
 
