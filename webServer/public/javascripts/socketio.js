@@ -6,3 +6,7 @@ var io = io.connect('http://localhost:3000');
 io.emit('subscribe', {
     data: "Hola socketio"
 });
+
+io.on('subscribe', function(users) {
+    console.log(users);
+});

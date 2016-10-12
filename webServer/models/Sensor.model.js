@@ -3,14 +3,14 @@
  */
 'use strict';
 
-var mongoose = require('../config/mongoose'),
-    Schema = mongoose.Schema;
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema,
+    deepPopulate = require('mongoose-deep-populate')(mongoose);
 
 var sensorSchema = new Schema ({
     name: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
     type: {
         type: String,
@@ -30,5 +30,7 @@ var sensorSchema = new Schema ({
         trim: true
     }
 });
+
+sensorSchema.plugin(deepPopulate);
 
 module.exports = mongoose.model('Sensor', sensorSchema);

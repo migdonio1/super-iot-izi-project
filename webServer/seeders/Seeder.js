@@ -3,6 +3,9 @@
  */
 'use strict';
 
+var mongoose = require('../config/mongoose');
+mongoose.start();
+
 var Sensor = require('../models/Sensor.model'),
     Switch = require('../models/Switch.model'),
     Device = require('../models/Device.model'),
@@ -10,19 +13,31 @@ var Sensor = require('../models/Sensor.model'),
 
 var sensor = new Sensor({
     name: "Termometro",
-    type: "temperatura",
+    type: "temperatura prueba",
     status: "inactivo"
 });
-sensor.save();
+sensor.save(function (err) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log('Sensor prueba creado');
+    }
+});
 
 var switch1 = new Switch({
     name: "Focos delanteros",
     status: "inactivo"
 });
-switch1.save();
+switch1.save(function (err) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log('Switch prueba creado');
+    }
+});
 
 var device = new Device({
-    name: "Salon CC2",
+    name: "Salon CC5",
     position: {
         latitude: "21.047841",
         longitude: "-89.644237"
@@ -44,13 +59,13 @@ device.save(function (err) {
 });
 
 var user = new User({
-    username: 'anakin16',
+    username: 'anakin20',
     password: '123456',
     name: {
         first: 'Raul Migdonio',
         last: 'Rodriguez Te'
     },
-    email: 'anakinvader@gmail.com',
+    email: 'anakinvader98@gmail.com',
     devices: [
         device._id
     ]

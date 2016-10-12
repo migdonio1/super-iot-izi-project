@@ -3,8 +3,9 @@
  */
 'use strict';
 
-var mongoose = require('../config/mongoose'),
-    Schema = mongoose.Schema;
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema,
+    deepPopulate = require('mongoose-deep-populate')(mongoose);
 
 var deviceSchema = new Schema ({
     name: {
@@ -38,5 +39,7 @@ var deviceSchema = new Schema ({
     }]
 
 });
+
+deviceSchema.plugin(deepPopulate);
 
 module.exports = mongoose.model('Device', deviceSchema);

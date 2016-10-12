@@ -5,14 +5,21 @@
 
 var mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost:27017/iot-wifi-switch");
+module.exports =  {
+    start: function() {
+        mongoose.connect("mongodb://localhost:27017/iot-wifi-switch");
 
-var db = mongoose.connection;
+        var db = mongoose.connection;
 
-db.on("error", console.error.bind(console, 'connection error:'));
+        db.on("error", console.error.bind(console, 'connection error:'));
 
-db.once('open', function() {
-    console.log("Database iot-wifi-switch connected...");
-});
+        db.once('open', function() {
+            console.log("Database iot-wifi-switch connected...");
+        });
 
-module.exports = mongoose;
+        require("../models/Switch.model");
+        require("../models/Sensor.model");
+        require("../models/Device.model");
+        require("../models/User.model");
+    }
+};

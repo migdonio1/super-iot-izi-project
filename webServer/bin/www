@@ -9,6 +9,20 @@ var debug = require('debug')('webServer:server');
 var http = require('http');
 
 /**
+ * Databases
+ */
+
+var mongoose = require('../config/mongoose');
+mongoose.start();
+
+
+/**
+ * Controllers
+ */
+
+var UserController = require('../controllers/User.controller');
+
+/**
  * Get port from environment and store in Express.
  */
 
@@ -29,14 +43,20 @@ server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
+/**
+ * Socket.io events
+ */
+
 var io = require('socket.io').listen( server );
 
 io.sockets.on('connection', function(socket) {
 
-  socket.on('subscribe', function(data) {
-    console.log(data);
-  });
+  UserController.socket = socket;
+
+  socket.on('subscribe', UserController.subscribe);
 });
+
+UserController.populateDemo();
 /**
  * Normalize a port into a number, string, or false.
  */
