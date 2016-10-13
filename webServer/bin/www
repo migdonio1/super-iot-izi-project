@@ -56,7 +56,6 @@ io.sockets.on('connection', function(socket) {
   socket.on('subscribe', UserController.subscribe);
 });
 
-UserController.populateDemo();
 /**
  * Normalize a port into a number, string, or false.
  */

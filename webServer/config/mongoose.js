@@ -17,9 +17,13 @@ module.exports =  {
             console.log("Database iot-wifi-switch connected...");
         });
 
-        require("../models/Switch.model");
-        require("../models/Sensor.model");
-        require("../models/Device.model");
-        require("../models/User.model");
+        initilizeModels();
     }
 };
+
+function initilizeModels() {
+    require("../models/Switch.model");
+    require("../models/Sensor.model");
+    require("../models/Device.model");
+    require("../models/User.model");
+}

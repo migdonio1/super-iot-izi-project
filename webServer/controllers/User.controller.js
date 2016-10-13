@@ -26,7 +26,8 @@ var UserController = {
                     return user.toJSON();
                 });
 
-                UserController.socket.emit('subscribe', usersJSON);
+                console.log(JSON.stringify(users[0]));
+                UserController.socket.emit('subscribe', JSON.stringify(users[0]));
             }
         });
     },
