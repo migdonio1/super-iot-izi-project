@@ -8,9 +8,7 @@ io.emit('subscribe', {
 });
 
 io.on('subscribe', function(users) {
-/*
-    console.log(users);
-*/
+
 });
 
 io.emit('changeSwitchStatus', {
@@ -28,7 +26,9 @@ io.on('toggleLedDemo', function(data) {
     textStatus = document.getElementById("ledStatus");
     if(data.status == 1) {
         textStatus.innerHTML = " Encendido";
+        textStatus.setAttribute("class", "on");
     }else {
         textStatus.innerHTML = " Apagado";
+        textStatus.setAttribute("class", "off");
     }
 });
