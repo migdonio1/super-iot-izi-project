@@ -70,7 +70,7 @@ var UserController = {
                 }
             });
         } else if (info.data == 0) {
-            sendData = new Buffer([0x32]);
+            sendData = new Buffer([0x30]);
             UserController.serial.write(sendData, function(err){
                 if(err) {
                     console.log('Error on write: ', err.message);
