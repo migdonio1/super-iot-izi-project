@@ -55,7 +55,6 @@ var UserController = {
     },
     toggleLed: function(info) {
         console.log("info: ", info);
-
         var sendData;
         if(info.data == 1) {
             sendData = new Buffer([0x31]);

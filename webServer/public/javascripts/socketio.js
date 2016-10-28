@@ -4,7 +4,7 @@
 var io = io.connect('http://localhost:3000');
 
 io.emit('subscribe', {
-    data: "Hola socketio"
+    data: "Hola IoT"
 });
 
 io.on('subscribe', function(users) {
@@ -23,6 +23,12 @@ io.on('changeSwitchStatus', function(user) {
     console.log(user);
 });
 
-io.emit('toggleLedDemo' , {
-    data: 1
+io.on('toggleLedDemo', function(data) {
+    console.log("LED Actualizado");
+    textStatus = document.getElementById("ledStatus");
+    if(data.status == 1) {
+        textStatus.innerHTML = " Encendido";
+    }else {
+        textStatus.innerHTML = " Apagado";
+    }
 });
