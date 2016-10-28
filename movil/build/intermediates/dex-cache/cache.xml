@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< Updated upstream
+<items version="2" >
+
+    <item
+        jar="/home/migdonio1/.gradle/caches/modules-2/files-2.1/org.java-websocket/Java-WebSocket/1.3.0/db2658f013fb163de4a99274c2eb9e17efe535d2/Java-WebSocket-1.3.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="db2658f013fb163de4a99274c2eb9e17efe535d2">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/Java-WebSocket-1.3.0_548bd1814fd075558d5cce04c1904c3f60406b84/classes.dex" />
+    </item>
+    <item
+        jar="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_7267638ee3b2f3132f6d5fb87e301f4637f353d3/classes.dex" />
+    </item>
+    <item
+        jar="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_970899742818213c82c1a74fc8ae4a9244c73c89/classes.dex" />
+    </item>
+    <item
+        jar="/home/migdonio1/.gradle/caches/modules-2/files-2.1/com.github.nkzawa/engine.io-client/0.3.1/3ca9d0d53a27ecb88538ed874be417cfa827db5d/engine.io-client-0.3.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3ca9d0d53a27ecb88538ed874be417cfa827db5d">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/engine.io-client-0.3.1_c5150ab43514efd39786379767cc9ca4f12af5e9/classes.dex" />
+    </item>
+    <item
+        jar="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_d1382a76d67dcdb77a1501e9b4ebbf658d93c856/classes.dex" />
+    </item>
+    <item
+        jar="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_2d7150462db4d4535f86d9ec98bbfb66f47b2d76/classes.dex" />
+    </item>
+    <item
+        jar="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_ea877d1f1179e882daa93a937433e5bc43712109/classes.dex" />
+    </item>
+    <item
+        jar="/home/migdonio1/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.1.1/3af19f153122737b372622fa6c81dd11a1c6b999/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_c9c8149476e857fd5e9274765911d42a02e0b59a/classes.dex" />
+    </item>
+    <item
+        jar="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="7f84fcf7b89b07a34ebd7d5bd1fe5b76cde5d78a">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_41fcfbe6088d1faca37b5d6c64445be1560b1363/classes.dex" />
+    </item>
+    <item
+        jar="/home/migdonio1/.gradle/caches/modules-2/files-2.1/com.github.nkzawa/socket.io-client/0.3.0/8dfd7cf8d1124acb027b3ffd53eafcc518af3ba9/socket.io-client-0.3.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="8dfd7cf8d1124acb027b3ffd53eafcc518af3ba9">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/socket.io-client-0.3.0_1f49deaca4b2208843bbfaac08bcdb2d436fa0cf/classes.dex" />
+    </item>
+    <item
+        jar="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="b949b8875785f735e6a3eaaeb6e6c20e6ae04f04">
+        <dex dex="/home/migdonio1/Code/IoT/proyectoIot/movil/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_213094d1f614097e3decf35b82b44ca6978e9081/classes.dex" />
+    </item>
+
+</items>
+=======
+<items version="2" />
+>>>>>>> Stashed changes
