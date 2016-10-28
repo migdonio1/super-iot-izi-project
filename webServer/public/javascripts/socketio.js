@@ -8,5 +8,21 @@ io.emit('subscribe', {
 });
 
 io.on('subscribe', function(users) {
+/*
     console.log(users);
+*/
+});
+
+io.emit('changeSwitchStatus', {
+    username: "anakin20",
+    deviceName: "Salon CC5",
+    switchStatus: "activo"
+});
+
+io.on('changeSwitchStatus', function(user) {
+    console.log(user);
+});
+
+io.emit('toggleLedDemo' , {
+    data: 1
 });

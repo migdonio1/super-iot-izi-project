@@ -7,6 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('webServer:server');
 var http = require('http');
+var serialport = require('serialport');
 
 /**
  * Databases
@@ -15,6 +16,20 @@ var http = require('http');
 var mongoose = require('../config/mongoose');
 mongoose.start();
 
+/**
+ * Serialport
+ */
+
+var portname = '/dev/ttyACM2';
+
+var serial = new serialport(portname, {
+  baudRate:9600,
+  dataBits: 8,
+  parity: 'none',
+  stopBits: 1,
+  flowControl: false,
+  parser: serialport.parsers.readline("\r\n")
+});
 
 /**
  * Controllers
@@ -52,8 +67,11 @@ var io = require('socket.io').listen( server );
 io.sockets.on('connection', function(socket) {
 
   UserController.socket = socket;
+  UserController.serial = serial;
 
+  socket.on('toggleLedDemo', UserController.toggleLed);
   socket.on('subscribe', UserController.subscribe);
+  socket.on('changeSwitchStatus', UserController.changeSwitchStatus);
 });
 
 /**
